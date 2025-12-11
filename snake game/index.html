@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Cyber Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui-layer">
+            <div class="hud-top">
+                <div id="score-display">SCORE: <span id="score">0</span></div>
+                <div id="high-score-display">HI: <span id="high-score">0</span></div>
+            </div>
+        </div>
+
+        <div id="menu-overlay">
+            <h1 id="menu-title">NEON SNAKE</h1>
+            <button class="btn" id="start-btn">INITIALIZE</button>
+            <div class="controls-hint">
+                Desktop: WASD or Arrows<br>
+                Mobile: Swipe to turn
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
