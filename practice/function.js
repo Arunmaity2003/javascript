@@ -36,7 +36,7 @@ function f(val){ //the function f is called higher order function as it accept a
 }
 
 f(function(){ //this functioin is the first class function
-    console.log("I am a first class function")
+    // console.log("I am a first class function")
 })
 
 
@@ -46,11 +46,14 @@ function higher(){
     }
 }
 
-higher()() //second () is for the returned function
+// higher()() //second () is for the returned function
 
 
 //clouser
 function guru(){
     var a = 12;
-    
+    return function(){
+        console.log(a)
+    }
 }
+guru()()
