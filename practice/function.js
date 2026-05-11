@@ -57,3 +57,17 @@ function guru(){
     }
 }
 guru()()
+
+
+
+
+
+//callback function
+function gretting(name,callback){
+    console.log(`hello ${name}`)
+    callback()
+}
+
+gretting("dilbar",function(){
+    console.log("how are you?")
+})
