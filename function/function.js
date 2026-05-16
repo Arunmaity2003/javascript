@@ -60,8 +60,6 @@ guru()()
 
 
 
-
-
 //callback function
 function gretting(name,callback){
     console.log(`hello ${name}`)
@@ -71,3 +69,9 @@ function gretting(name,callback){
 gretting("dilbar",function(){
     console.log("how are you?")
 })
+
+
+//IIFE -> Immediately Invoked Function Expression
+(function() {
+
+})()
